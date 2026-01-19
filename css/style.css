@@ -1,0 +1,637 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+    /* border: 1px solid red; */
+}
+
+/* utility class */
+
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.inner{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.full-width{
+    width: 100%;
+}
+/* navigation */
+
+header .scroll{
+    position: fixed;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: #f29c52;
+    right: 3rem;
+    bottom: 3rem;
+    text-align: center;
+    line-height: 4rem;
+    border-radius: 2rem;
+    z-index: 5;
+    cursor: pointer;
+}
+header .scroll img{
+    width: 35%;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    padding-block: 3rem;
+    background-color: #ffffff;
+}
+.navigation ul{
+    width: 600px;
+    display: flex;
+    justify-content: center;
+}
+.navigation ul li{
+    padding-inline: 2.5rem;
+    list-style-type: none;
+}
+.navigation ul li a{
+    font-size: 1.5rem;
+    color: #000000;
+    font-weight: 500;
+}
+.navigation .btn{
+    background-color: #f29c52;
+    padding: 1rem 3rem;
+    color: #ffffff;
+    font-size: 1.3rem;
+    border-radius: 3rem;
+}
+.navigation ul li a:hover{
+    color: #f29c52;
+}
+.navigation .outline{
+    outline: 1px solid #fff5ed;
+    outline-offset: 8px;
+    border-radius: 2rem;
+}
+.navigation .counting::after{
+    content: "0";
+    padding: 0.2rem 0.4rem;
+    border-radius: 4rem;
+    color: #ffffff;
+    background-color: #f29c52;
+    position: relative;
+    top:-2rem;
+    right: 0.5rem;
+}
+.navigation .menu{
+    font-size: 2.5rem;
+    display: none;
+}
+
+/* banner */
+
+.banner{
+    background-image: url("../images/hero-bg-pattern.png");
+    background-size: cover;
+    width: 100%;
+    background-color: #fff5ed;
+    padding-top: 10rem;
+}
+.banner .inner .banner-text{
+    max-width: 500px;
+}
+.banner .inner .banner-text h3{
+    font-size: 3rem;
+    color: #f29c52;
+    font-weight: 500;
+}
+.banner .inner .banner-text h1{
+    font-size: 10rem;
+    line-height: 9rem;
+    color: #492d13;
+    margin-bottom: 3rem;
+}
+.banner .hero-img img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+.banner .banner-img{
+    max-width: 450px;
+    display: flex;
+    justify-content: end;
+}
+.banner .banner-img img{
+    width: 90%;
+    margin-block: 8rem;
+}
+.banner .inner .btn{
+    background-color: #f29c52;
+    color: #ffffff;
+    width: 16rem;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    display: flex;
+    justify-content: center;
+}
+.banner .inner .arrow{
+    width: 15%;
+    margin-top: 0.3rem;
+    margin-left: 1.5rem;
+}
+
+/* about */
+
+.about{
+    padding-block: 10rem;
+}
+.about .cake-box{
+    border: 5px solid #fff5ed;
+    padding: 1.5rem 4rem;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.about .cake-box img{
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+.about .cake-box h3{
+    font-size: 1.8rem;
+    text-align: center;
+    color: #492d13;
+    margin-top: 1rem;
+}
+
+/* service */
+
+.service{
+    width: 100%;
+    background-color: #f29c52;
+    padding-block: 5rem;
+}
+.service .outline{ 
+    outline: 2px dotted #fFffff;
+    outline-offset: 8px;
+}
+.service .service-img{ 
+    background-color: #ffffff;
+    padding: 1rem 0.5rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+    margin-left: 1.5rem;
+}
+.service .service-img img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+.service .service-text{
+    color: #ffffff;
+}
+.service .service-text h1{
+    font-weight: 500;
+}
+.service .service-text p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/* product */
+
+.product{
+    width: 100%;
+    padding-block: 8rem 10rem;
+    background-color: #fff5ed;
+    background-image: url("../images/section-bg-element-image-1.png"), url("../images/section-bg-element-image-2.png");
+    background-position: top left ,bottom right;
+    background-size: 15%, 15%;
+    background-repeat: no-repeat, no-repeat;
+}
+.product .product-title h4{
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    color: #f29c52; 
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 8rem;
+    width: 17rem;  
+    margin:  0 auto;
+    padding-block: 0.7rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.product .product-title h1{
+    padding-block: 3rem 5rem;
+    font-size: 3rem;
+    color: #492d13;
+    line-height: 4rem;
+    text-align: center;
+}
+.product .product-item{
+    width: 24%;
+    background-color: #ffffff;
+    padding-block: 2rem;
+    padding-inline: 3rem;
+    margin-block: 1rem;
+}
+.product .product-item img{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+.product .product-item .product-text{
+    text-align: center;
+}
+.product .product-item .product-text h3{
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    color: #492d13;
+}
+.product .product-item .product-text h4{
+    font-size: 1.2rem;
+}
+.product .product-item .product-text .orange{
+    color: #f29c52;
+    margin-right: 1rem;
+}
+.product .product-item .product-text .gray{
+    color: #d3d3d3;
+}
+
+/* discount */
+
+.discount{
+    width: 100%;
+    background-color: #fff5ed;
+    background-image: url("../images/banner-element-shape.svg"), url("../images/banner-cup-cake.png") ;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 96% 99%, 87% 62%;
+    background-size: 15%, 10%;
+}
+.discount .discount-img{
+    width: 50%;
+}
+.discount .discount-img img{
+    width: 90%;
+    display: block;
+}
+.discount .discount-text{
+    width: 50%;
+}
+.discount .discount-text h3{
+    font-size: 2.5rem;
+    color: #f29c52;
+    font-weight: 600;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+.discount .discount-text h1{
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+    color: #492d13;
+    margin-bottom: 2rem;
+}
+.discount .discount-text span{
+    color: #f29c52;
+    text-decoration: underline;
+}
+.discount .discount-text .btn{
+    background-color: #f29c52;
+    font-size: 1.5rem;
+    color: #ffffff;
+    width: 15rem;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 5rem;
+}
+.discount .discount-text .arrow{
+    width: 15%;
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+}
+
+
+/* blog */
+
+.blog{
+    padding-block: 6rem;
+    width: 100%;
+    background-image: linear-gradient(to bottom, #fff5ed , #ffffff);
+}
+.blog .blog-title h4{
+    font-size: 1.2rem;
+    color: #f29c52;
+    background-color: #ffffff;
+    width: 18rem;
+    letter-spacing: 0.2rem;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 8rem;
+    padding-block: 0.7rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.blog .blog-title h1{
+    font-size: 3rem;
+    color: #492d13;
+    padding-block: 3rem 5rem;
+    line-height: 4rem;
+    text-align: center;
+}
+.blog .blog-box{
+    width: 32%;
+    background-image: linear-gradient(to bottom, #fff9f3, #f9e4d1);
+    padding-block: 4rem;
+    padding-inline: 2rem;
+    border-radius: 0.6rem;
+}
+.blog .blog-box .blog-img img{
+    width: 100%;
+}
+.blog .blog-box .blog-text h3{
+    font-size: 1.3rem;
+    color: #f29c52;
+    padding-block: 1.4rem 0.8rem;
+}
+.blog .blog-box .blog-text h1{
+    line-height: 2.6rem;
+    color: #492d13;
+    margin-bottom: 3rem;
+}
+.blog .blog-box .blog-text .btn{
+    border: 2px solid #f29c52;
+    padding: 1.1rem 1.7rem;
+    color: #492d13;
+    border-radius: 0.3rem;
+}
+
+/* reservation */
+
+.reservation{
+    padding-block: 2rem 0rem; 
+    background-image: url("../images/rservation-element.png");
+    background-repeat: no-repeat;
+    background-position: -5% 8%;
+    background-size: 32%;
+}
+.reservation .reservation-title h4{
+    font-size: 1.2rem;
+    background-color: #ffffff;
+    color: #f29c52;
+    text-align: center;
+    width: 18rem;
+    letter-spacing: 0.2rem;
+    margin: 0 auto;
+    border-radius: 8rem;
+    padding-block: 0.7rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+.reservation .reservation-title h1{
+    font-size: 3rem;
+    padding-block: 3rem 5rem;
+    color: #492d13;
+    text-align: center;
+    line-height: 3rem;
+}
+.reservation .reservation-form{
+    background-image: url("../images/reservation-bg.jpg");
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1rem;
+}
+.reservation .reservation-form .input-box-1{
+    margin-left: 4rem;
+    display: inline-block;
+    margin-top: 4rem;
+    margin-right: 4rem;
+}
+.reservation .reservation-form .input-box-2{
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    display: inline-block;
+}
+.reservation .reservation-form .input-box-3{
+    margin-left: 4rem;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    display: inline-block;
+}
+.reservation .reservation-form .input-box-1 input{
+    width: 100%;
+    padding-block: 0.7rem;
+    padding-inline: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+.reservation .reservation-form .input-box-2 input{
+    width: 100%;
+    padding-block: 0.7rem;
+    padding-inline: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+.reservation .reservation-form .input-box-3 input{
+    width: 100%;
+    padding-block: 0.7rem;
+    padding-inline: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+.reservation .reservation-form .input-box-4{
+    margin-left: 4rem;
+    margin-top: 3rem;
+    margin-right: 4rem;
+    margin-bottom: 2rem;
+}
+.reservation .reservation-form .input-box-4 textarea{
+    width: 100%;
+    padding-block: 1.2rem;
+    padding-inline: 3rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+}
+.reservation .reservation-form button{
+    display: block;
+    margin: 0 auto;
+    font-size: 1.3rem;
+    background-color: #f29c52;
+    color: #fFffff;
+    padding: 1rem 3.2rem;
+    border-radius: 3rem;
+    border: none;
+    cursor: pointer;
+}
+
+/* footer */
+
+.contact .footer-bg{
+    background-image: url("../images/footer-bg.svg");
+    /* min-height: 200px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: right 25px left; */
+    position: relative;
+    top: -1.2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+.contact .footer-img{
+    background-color: #ffffff;
+    padding: 1rem 0.5rem;
+    border-radius: 5rem;
+    margin-right: 2rem;
+    margin-left: 1.5rem;
+}
+.contact .footer-img img{
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+}
+.contact .outline{
+   outline: 2px dotted #ffffff;
+   outline-offset: 8px;
+}
+.contact .footer-text{
+    color: #ffffff;
+    width: 17%;
+}
+.footer-end{
+    background-color: #492d13;
+    margin-top: -1.2rem;
+    color: #ffffff;
+}
+.footer-end h3{
+    font-weight: 500;
+}
+
+/* media query  */
+
+@media screen and (max-width:940px){
+    .navigation .menu{
+        display: block;
+    }
+    .navigation ul{
+        display: none;
+    }
+    .navigation .counting{
+        display: none;
+    }
+    .navigation .btn{
+        display: none;
+    }
+}
+@media screen and (max-width:832px){
+    .inner{
+        max-width: 700px;
+    }
+    html{
+        font-size: 8px;
+    }
+    .banner .inner .banner-text{
+        max-width: 300px;
+    }
+    .banner .hero-img img{
+        display: none;
+    }
+    .banner .banner-img{
+        max-width: 400px;
+    }
+    .about{
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .about .cake-box{
+        margin-bottom: 2rem;
+    }
+    .service-box{
+        max-width: 250px;
+    }
+    .product .product-box{
+        max-width: 550px;
+    }
+    .product .product-item{
+        width: 40%;
+    }
+    .discount{
+        background-image: none;
+    }
+}
+@media screen and (max-width:700px){
+    .blog .blog-box{
+        width: 65%;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+     .discount .discount-img{
+        width: 100%;
+    }
+    .discount .discount-img img{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .discount .discount-text{
+        margin: 0 auto;
+        margin-top: 3rem;
+        width: 63%;
+    }
+    .banner .inner .banner-text{
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    .banner .banner-img{
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:600px){
+    .product .product-box{
+        max-width: 400px;
+    }
+    .product .product-item{
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+    .banner .inner .banner-text h1{
+        font-size: 8rem;
+        line-height: 8rem;
+    }
+    .contact .footer-box{
+        max-width: 250px;
+    }
+    .contact .footer-text{
+        width: 50%;
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (max-width:425px){
+    .about{
+        max-width: 340px;
+    }
+    .blog .blog-box{
+        width: 80%;
+    }  
+}
