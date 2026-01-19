@@ -135,22 +135,20 @@ header .scroll img{
 .banner .banner-img img{
     width: 90%;
     margin-block: 8rem;
-    /* margin: 0 auto; */
-    /* padding-top: 7rem; */
 }
 .banner .inner .btn{
     background-color: #f29c52;
     color: #ffffff;
     width: 18rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     padding: 0.8rem;
     border-radius: 5rem;
     display: flex;
     justify-content: center;
 }
 .banner .inner .arrow{
-    width: 15%;
-    margin-top: 0.3rem;
+    /* width: 15%; */
+    /* margin-top: 0.3rem; */
     margin-left: 1.5rem;
 }
 
@@ -579,6 +577,12 @@ header .scroll img{
     .discount{
         background-image: none;
     }
+    .service .service-img{
+        margin-top: 2rem;
+    }
+    .service .service-text{
+        margin-top: 2rem;
+    } 
 }
 @media screen and (max-width:700px){
     .blog .blog-box{
@@ -642,5 +646,5 @@ header .scroll img{
     }
     .blog .blog-box{
         width: 80%;
-    }  
+    } 
 }
