@@ -140,7 +140,8 @@ header .scroll img{
     background-color: #f29c52;
     color: #ffffff;
     width: 18rem;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    /* font-weight: 500; */
     padding: 0.8rem;
     border-radius: 5rem;
     display: flex;
@@ -148,7 +149,7 @@ header .scroll img{
 }
 .banner .inner .arrow{
     /* width: 15%; */
-    /* margin-top: 0.3rem; */
+    margin-top: 0.3rem;
     margin-left: 1.5rem;
 }
 
