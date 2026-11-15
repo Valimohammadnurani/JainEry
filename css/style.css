@@ -137,21 +137,25 @@ header .scroll img{
     width: 90%;
     margin-block: 8rem;
 }
-.banner .inner .btn{
+.banner .inner .btn {
     background-color: #f29c52;
     color: #ffffff;
     width: 18rem;
-    font-size: 1.7rem;
-    /* font-weight: 500; */
+    font-size: 1.8rem;
     padding: 0.8rem;
     border-radius: 5rem;
-    display: flex;
+
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    white-space: nowrap;
 }
-.banner .inner .arrow{
-    /* width: 15%; */
-    margin-top: 0.2rem;
-    margin-left: 1.5rem;
+
+.banner .inner .arrow {
+    width: 20%;
+    margin: 0;
+    display: block;
 }
 
 /* about */
