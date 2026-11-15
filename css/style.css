@@ -165,7 +165,7 @@ header .scroll img{
 }
 .about .cake-box {
     border: 5px solid #fff5ed;
-    width: 24rem;
+    width: 26rem;
     aspect-ratio: 1 / 1;
     padding: 2rem;
     border-radius: 50%;
@@ -337,7 +337,7 @@ header .scroll img{
     white-space: nowrap;
 }
 .discount .discount-text .arrow{
-    width: 15%;
+    width: 25%;
     margin: 0;
     display: block;
 }
